@@ -1,0 +1,477 @@
+.page-header {
+    padding: 60px;
+   
+      @include flexbox(center, center, column);
+    @include bg-img(url('../../assets/images/bb1\ \(2\).jpg'));
+    position: relative;
+    height: auto;
+
+    @include media-up(md) {
+        height: 350px;
+    }
+
+    margin: 0px;
+
+    h1 {
+        color: $maincColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        justify-content: center; // عشان يطلع بالنص تحت العنوان
+        gap: 10px;
+        margin-top: 15px;
+        font-size: 16px;
+
+        a {
+           color: $maincColor;
+            text-decoration: none;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            i {
+                font-size: 14px;
+                color: $secandaryColor; // لون الأيقونة البرتقالي
+            }
+
+            &:hover {
+                opacity: 0.8;
+                text-decoration: underline;
+            }
+        }
+
+        span {
+           color: $maincColor;
+        }
+    }
+}
+
+.page-content {
+    margin: 60px 0;
+
+    .inner-content {
+        display: flex;
+        flex-wrap: wrap; // يسمح بالعناصر بالنزول تحت بعضها
+        gap: 20px;
+
+        .right-section {
+            width: 100%; // العرض الكامل للجوال
+
+            @media (min-width: 992px) {
+                width: 70%; // العرض لمتصفح الكمبيوتر
+            }
+
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+
+            .main-img {
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+                border-radius: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            h2 {
+                margin: 10px 0;
+                color: $maincColor;
+                font-size: 28px;
+            }
+
+            .description-page {
+                p {
+                    margin-bottom: 15px;
+                    font-size: 18px;
+                }
+            }
+
+            .props {
+                background-color: #eee;
+                padding: 20px;
+                border-radius: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                direction: rtl;
+
+                div {
+                    width: 100%;
+                    padding: 0 10px;
+
+                    @media (min-width: 768px) {
+                        width: 50%;
+
+                        &:first-child {
+                            border-left: 1px solid #a0a0a0;
+                        }
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            margin-bottom: 20px;
+                            border-bottom: 1px dotted #c0c0c0;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-bottom: 5px;
+                            font-size: 15px;
+
+                            span {
+                                font-weight: bold;
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .extra-props {
+                background-color: #eee;
+                padding: 20px;
+                border-radius: 10px;
+                display: flex;
+                gap: 15px;
+
+                .box {
+                    background-color: white;
+                    width: 33%;
+                    border-radius: 10px;
+                    padding: 15px;
+                    box-shadow: 3px 3px 3px #ccc;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    i {
+                        font-size: 30px;
+                        color: white;
+                        background-color: $maincColor;
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        @include flexbox(center, center, column);
+                    }
+
+                    h4 {
+                        margin: 10px 0;
+                        color: $maincColor;
+                    }
+
+                    span {
+                        color: red;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .plan-Slider {
+
+                .swiper-slide {
+                    width: 100%;
+                    height: 500px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+
+                    }
+                }
+
+                .control {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 15px;
+                    z-index: 1000;
+                }
+            }
+
+            .inner-props {
+                background-color: #eee;
+                padding: 20px;
+                border-radius: 10px;
+                display: flex;
+                gap: 15px;
+                margin-top: 20px;
+
+                .box {
+                    width: 33%;
+
+                    ul {
+                        li {
+                            margin-bottom: 15px;
+                            position: relative;
+                            margin-right: 25px;
+                            border-bottom: 2px dotted #b6b6b6;
+                            padding-bottom: 5px;
+
+                            &::before {
+                                position: absolute;
+                                content: "\F00c";
+                                font-weight: bold;
+                                color: white;
+                                font-size: 15px;
+                                font-family: "Font Awesome 5 Free";
+                                background-color: $maincColor;
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                right: -25px;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            .comments {
+                form {
+                    background-color: #eee;
+                    padding: 20px;
+                    border-radius: 10px;
+                    width: 100%;
+
+                    .info-input {
+                        display: flex;
+                        gap: 15px;
+
+                        div {
+                            width: 100%;
+
+                            input {
+                                background-color: white;
+                                height: 35px;
+                                border-radius: 10px;
+                                border: 1px solid #d4d2d2;
+                                margin-bottom: 15px;
+                                width: 100%;
+
+                                &:focus {
+                                    outline: 1px solid #ccc;
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    textarea {
+                        background-color: white;
+
+                        border-radius: 10px;
+                        border: 1px solid #d4d2d2;
+                        height: 150px;
+                        width: 100%;
+
+                        &:focus {
+                            outline: 1px solid #ccc;
+                        }
+                    }
+                }
+            }
+        }
+
+        .left-section {
+            position: -webkit-sticky; // لدعم متصفحات Safari
+            position: sticky;
+            top: 60px; // المسافة من أعلى الشاشة عند الالتصاق
+            height: fit-content; // لضمان أن الشريط يأخذ حجم محتواه فقط ولا يتمدد بشكل خاطئ
+
+            width: 100%; // العرض الكامل للجوال
+
+            @media (min-width: 992px) {
+                width: calc(30% - 20px); // العرض لمتصفح الكمبيوتر مع مراعاة الفراغ
+            }
+
+            .widget {
+                background: #ffffff;
+                padding: 20px;
+                margin-bottom: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+                h3 {
+                    font-size: 20px;
+                    color: #2c3e50;
+                    margin-bottom: 15px;
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid $maincColor;
+                    display: inline-block;
+                }
+            }
+            .price-card {
+    background-color: #fff;
+    border-top: 4px solid $maincColor; // خط بلون البراند فوق السعر
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px; // مسافة بينه وبين البحث
+
+    .widget-title {
+        font-size: 1.1rem;
+        color: #666;
+    }
+
+    .price-value {
+        color: $maincColor;
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin: 10px 0;
+        
+        .currency {
+            font-size: 0.9rem;
+            color: #333;
+        }
+    }
+
+    .status {
+        font-size: 0.85rem;
+        color: #27ae60; // لون أخضر للدلالة على التوفر
+        font-weight: bold;
+    }
+}
+
+            // 1. البحث
+            .search-form {
+                display: flex;
+
+                input {
+                    flex: 1;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px 0 0 5px;
+                }
+
+                button {
+                    background: $maincColor;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 0 5px 5px 0;
+                    cursor: pointer;
+                }
+            }
+
+            // 2. بطاقة الشخص
+            .author-info {
+                text-align: center;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    margin: 5px 0;
+                }
+
+                .social-links {
+                    margin-top: 15px;
+
+                    a {
+                        margin: 0 5px;
+                        color: #555;
+                        font-size: 18px;
+                        transition: 0.3s;
+                    }
+
+                    a:hover {
+                        color: $maincColor;
+                    }
+                }
+            }
+
+            // 3. فورم الحجز
+            .book-form {
+
+                input,
+                textarea {
+                    font-family: cairo;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    padding: 12px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+
+                button {
+                    font-family: cairo;
+                    width: 100%;
+                    padding: 12px;
+                    background: $maincColor;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+
+
+
+
+
+            // 4. التصنيفات
+            .categories {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    padding: 10px 0;
+                    border-bottom: 1px dashed #eee;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            // 5. الوسوم
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                span {
+                    background: #f0f0f0;
+                    padding: 6px 15px;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+
+                span:hover {
+                    background: $maincColor;
+                    color: white;
+                }
+            }
+        }
+    }
+}

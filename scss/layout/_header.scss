@@ -1,0 +1,82 @@
+header {
+    background-color: white;
+    height: 60px;
+    @include flexbox;
+    position: -webkit-sticky; // لدعم متصفحات Safari
+    position: sticky;
+    top: 1px; // المسافة من أعلى الشاشة عند الالتصاق
+    height: fit-content; // لضمان أن الشريط يأخذ حجم محتواه فقط ولا يتمدد بشكل خاطئ
+    z-index: 100000;
+    border-bottom: 1PX solid #ccc;
+
+    nav {
+        @include flexbox(space-between, center, row);
+
+        ul {
+            list-style: none;
+            display: none;
+
+            @include media-up (md) {
+                @include flexbox();
+                gap: 20px;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: $linkColor;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: $maincColor;
+                        scale: 1.1;
+                    }
+                }
+
+                transition: 0.3s;
+
+                &:hover {
+
+                    scale: 1.1;
+                }
+            }
+        }
+
+        .icons {
+            display: none;
+
+            @include media-up(md) {
+                display: flex;
+            }
+
+            gap: 15px;
+
+
+            a {
+                color: $maincColor;
+                transition: 0.3s;
+
+                &:hover {
+                    scale: 1.2;
+                    color: $secandaryColor;
+                }
+            }
+
+            i {
+                font-size: 25px;
+            }
+        }
+
+        .mobile-nav-icon {
+            display: flex;
+            cursor: pointer;
+
+            @include media-up(md) {
+                display: none;
+            }
+        }
+
+    }
+
+}

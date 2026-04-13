@@ -1,0 +1,676 @@
+// .box{
+//     background-color: red;
+//     padding: 20px;
+//     text-align: center;
+//     @include container();
+
+//     @include media-up(sm){
+//         background-color: blue;
+//     }
+//     @include media-up(md){
+//         background-color: green;
+//     }
+//     @include media-up(lg){
+//         background-color: green;
+//     }
+// }
+
+.hero>* {
+    @include flexbox(center, center, column);
+    @include bg-img(url('../../assets/images/bb1\ \(1\).jpg'));
+    position: relative;
+    height: auto;
+
+    @include media-up(md) {
+        height: 800px;
+    }
+
+    margin: 0px;
+
+    .overlary {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.575);
+    }
+
+    .hero-info {
+        @include flexbox(center, center, column);
+        position: relative;
+        z-index: 1000;
+        color: $maincColor;
+        width: 80%;
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+
+            @include media-up(md) {
+                font-size: 35px;
+            }
+
+            @include media-up(lg) {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+
+            @include media-up(md) {
+                font-size: 25px;
+            }
+
+        }
+
+
+        .search-area {
+            display: flex;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 10px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+
+            .search {
+                width: 100%;
+
+                @include media-up(md) {
+                    width: 32%;
+                }
+
+                position: relative;
+
+                input,
+                select {
+                    width: 100%;
+                    padding: 15px;
+                    padding-right: 35px;
+                    font-family: cairo;
+                    border: 1px solid #ccc;
+                    transition: 0.3s;
+                    border-radius: 5px;
+
+                    &:focus {
+                        outline: none;
+                        border: 1px solid #929292;
+
+                    }
+                }
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 15px;
+                    color: $maincColor;
+                }
+            }
+        }
+    }
+}
+
+
+// قسم حول الشركة
+
+.about {
+    background-color: white;
+    padding: 50px 0;
+
+
+    .inner-about {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include media-up(md) {
+            @include flexbox(center, center, row);
+        }
+
+        .right-section {
+            h2 {
+                color: $maincColor;
+            }
+
+            @include media-up(md) {
+                width: 50%;
+            }
+
+            ul {
+                list-style: none;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                li {
+                    position: relative;
+                    margin-bottom: 10px;
+                    border-bottom: 1px dotted #a8a8a8;
+                    width: fit-content;
+                    padding-bottom: 5px;
+                    font-size: 13px;
+                    margin-right: 25px;
+
+                    @include media-up(md) {
+                        font-size: 16px;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: "\F058";
+                        color: $maincColor;
+                        font-weight: bold;
+                        font-family: "Font Awesome 5 Free";
+                        width: 16px;
+                        right: -25px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            p {
+                @include media-up(md) {
+                    width: 85%;
+                }
+            }
+        }
+
+        .left-section {
+            margin-top: 30px;
+
+            @include media-up(md) {
+                width: 50%;
+            }
+
+            transition: 0.3s;
+
+            img {
+                max-width: 100%;
+
+            }
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+
+.statistics {
+    background-image: url(/assets/images//1\ \(26\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.336)
+    }
+
+    .all-statistics {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+
+
+        .statistic {
+            width: 250px;
+            height: 250px;
+            padding: 20px 0;
+
+            .overlay-statistic {
+                padding: 20px 0;
+                border-radius: 30px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.514);
+
+                .statistic-info {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    h3 {
+                        font-size: 40px;
+                        color: rgb(207, 207, 207);
+                    }
+
+                    p {
+                        font-size: 25px;
+                        color: rgb(207, 207, 207);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.text-imonials {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+
+    .all-text-imonial {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+
+        .box-text-imonial {
+            background-color: #eee;
+            padding: 10px;
+            padding-top: 35px;
+            padding-bottom: 15px;
+            border-radius: 10px;
+            border-right: 2px solid $secandaryColor;
+            border-left: 2px solid $secandaryColor;
+            @include flexbox(center, center, column);
+            position: relative;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                scale: 1.03;
+                box-shadow: 2px 4px 1px rgba(158, 158, 158, 0.774);
+            }
+
+            .image {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 1px solid $secandaryColor;
+                position: absolute;
+                top: -35px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+            }
+
+            h3 {
+                color: $maincColor;
+            }
+
+            .position {
+                color: $secandaryColor;
+                font-weight: bold;
+            }
+
+            .stars {
+                i {
+                    color: rgb(253, 215, 0);
+                }
+
+            }
+
+            .decoration-text-imonial {
+                text-align: center;
+                font-size: 14px;
+                width: 90%;
+            }
+        }
+
+    }
+}
+
+.gallary {
+    padding: 50px 0;
+    background-color: white;
+
+    .all-images {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+
+        .image {
+            position: relative; // ضروري لتموضع الـ overlay
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden; // مشان الـ overlay يختفي لما يكون تحت
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.5s;
+                }
+            }
+
+            .overlay {
+                position: absolute;
+                top: 100%; // مبلش من تحت الصورة (مخفي)
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7); // سواد شفاف فخم
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                transition: 0.5s ease; // نعومة الحركة
+                z-index: 5;
+                pointer-events: none; // بيسمح للضغطة تروح للرابط وتفتح المعرض
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1); // تكبير خفيف للصورة
+                }
+
+                .overlay {
+                    top: 0; // بيطلع لفوق ويغطي الصورة
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.partners {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+
+        .image {
+            height: 150px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                cursor: pointer;
+                filter: grayscale(1);
+                transition: 0.3s;
+
+
+                &:hover {
+                    filter: grayscale(0);
+                    scale: 1.2;
+                }
+            }
+        }
+
+    }
+}
+
+.blog {
+    background-color: white;
+    padding: 50px 0;
+
+    .all-blogs {
+        .swiper {
+            width: 100%;
+            padding: 40px 0;
+
+            .swiper-slide {
+                // السلايدر بيتحكم بالعرض تلقائياً
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+
+                .blog-card {
+
+                    background-color: #eee;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 3px 3px 10px #ccc;
+
+
+
+                    &:hover {
+                        transform: translateY(-10px);
+                    }
+
+                    .image {
+                        position: relative;
+                        width: 100%;
+                        height: 250px;
+
+                        .blog-category {
+                            position: absolute;
+                            background-color: $secandaryColor;
+                            padding: 3px 15px;
+                            border-radius: 5px;
+                            color: white;
+                            right: 15px;
+                            top: 15px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .info {
+                        padding: 15px;
+
+                        h3 {
+                            color: $maincColor;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            color: #7c7c7c;
+                        }
+
+                        hr {
+                            margin: 15px 0;
+                            height: 0.5px;
+                            background-color: #a5a5a5;
+                            border: none;
+                            width: 90%;
+                        }
+
+                        .blog-footer {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .author {
+                                display: flex;
+                                align-items: center;
+
+                                .author-image {
+                                    width: 70px;
+                                    height: 70px;
+                                    border-radius: 50%;
+                                    border: 2px solid $maincColor;
+                                    overflow: hidden;
+                                    margin-right: 15px;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+            .swiper-button-prev {
+                color: white;
+                /* لون السهم يصبح أبيض ليتناقض مع الخلفية */
+                background-color: $secandaryColor;
+                /* لون الخلفية الدائرية (استخدم نفس البرتقالي للحفاظ على السمة) */
+
+                /* جعل الشكل دائرياً */
+                border-radius: 50%;
+
+                /* تحديد حجم الدائرة */
+                width: 50px;
+                /* عرض الدائرة */
+                height: 50px;
+                /* طول الدائرة */
+
+                /* تمركز السهم داخل الدائرة */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* الموقع فوق السلايد */
+                left: 5px;
+                /* المسافة من اليمين */
+                bottom: 10px;
+                /* المسافة من الأسفل */
+                top: 45%;
+                /* إلغاء التمركز العمودي الافتراضي */
+
+                /* تأثير ظل لإعطاء عمق (اختياري) */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+                /* تأثير تمرير الماوس */
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            /* تصغير حجم السهم قليلاً ليتناسب مع حجم الدائرة الجديد */
+            .swiper-button-prev::after {
+                font-size: 20px;
+                /* حجم السهم الداخلي */
+            }
+
+            /* تأثير عند تمرير الماوس فوق الدائرة */
+            .swiper-button-prev:hover {
+                background-color: #a04000;
+                /* يصبح اللون البرتقالي أغمق قليلاً */
+                transform: scale(1.1);
+                /* تكبير الدائرة قليلاً */
+            }
+
+
+
+            .swiper-button-next {
+                color: white;
+                /* لون السهم يصبح أبيض ليتناقض مع الخلفية */
+                background-color: $secandaryColor;
+                /* لون الخلفية الدائرية (استخدم نفس البرتقالي للحفاظ على السمة) */
+
+                /* جعل الشكل دائرياً */
+                border-radius: 50%;
+
+                /* تحديد حجم الدائرة */
+                width: 50px;
+                /* عرض الدائرة */
+                height: 50px;
+                /* طول الدائرة */
+
+                /* تمركز السهم داخل الدائرة */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* الموقع فوق السلايد */
+                left: 5px;
+                /* المسافة من اليمين */
+                bottom: 10px;
+                /* المسافة من الأسفل */
+                top: 45%;
+                /* إلغاء التمركز العمودي الافتراضي */
+
+                /* تأثير ظل لإعطاء عمق (اختياري) */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+                /* تأثير تمرير الماوس */
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            /* تصغير حجم السهم قليلاً ليتناسب مع حجم الدائرة الجديد */
+            .swiper-button-next::after {
+                font-size: 20px;
+                /* حجم السهم الداخلي */
+            }
+
+            /* تأثير عند تمرير الماوس فوق الدائرة */
+            .swiper-button-next:hover {
+                background-color: #a04000;
+                /* يصبح اللون البرتقالي أغمق قليلاً */
+                transform: scale(1.1);
+                /* تكبير الدائرة قليلاً */
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    }
+}

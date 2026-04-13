@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="">
+                    <img width="80" src="assets/images/logo.png" alt="">
+                </a>
+
+            </div>
+
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="">العقارات</a></li>
+                    <li><a href=""> المدونة</a></li>
+                    <li><a href="">حول الشركة</a></li>
+                    <li><a href="">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fab fa-linkedin"></i></a>
+            </div>
+            <i class="fa-solid fa-signal mobile-nav-icon" id="mobile-nav-icon"></i>
+        </nav>
+    </header>
+    <!-- القائمة الجانبية للجوال -->
+    <aside id="aside">
+        <div class="mobile-menu">
+            <img class="logo" src="assets/images/logo.png" alt="">
+
+            <ul>
+                <li><a href="">الرئيسية</a></li>
+                <li><a href="">العقارات</a></li>
+                <li><a href=""> المدونة</a></li>
+                <li><a href="">حول الشركة</a></li>
+                <li><a href="">اتصل بنا</a></li>
+            </ul>
+            <form action="">
+                <input type="text">
+            </form>
+
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fab fa-linkedin"></i></a>
+            </div>
+            <div class="cta">
+                <a href="#" class="btn-primary">اتصل بنا</a>
+                <a href="#" class="btn-danger">المزيد</a>
+
+
+            </div>
+
+
+        </div>
+    </aside>
+    <!--  القسم ال hero  -->
+    <section>
+        <div class="hero">
+            <div class="overlary">
+                <div class="hero-info">
+                    <h1>الشركة SKYLINE العقارية في سوريا</h1>
+                    <p> المركز الحقيقي لكل فرصة عقارية ناجحة. نبدأ معك من اختيار الموقع وصولاً إلى تسليم المفتاح</P>
+                    <form action="">
+                        <div class="search-area">
+                            <div class="search">
+                                <select name="" id="">
+                                    <option value="" disabled selected>اختر نوع العقار</option>
+                                    <option value="">بيع</option>
+                                    <option value="">اجار</option>
+                                </select>
+                                <i class="fa-solid fas fa-thumbtack"></i>
+                            </div>
+                            <div class="search">
+                                <select name="" id="">
+                                    <option value="" disabled selected>اختر المحافظة </option>
+                                    <option value="">دمشق</option>
+                                    <option value="">حماه</option>
+                                    <option value="">حمص</option>
+                                    <option value="">طرطوس</option>
+                                    <option value="">لاذقية</option>
+                                </select>
+                                <i class="fa-solid fas fa-thumbtack"></i>
+                            </div>
+
+                            <div class="search">
+                                <input type="text" placeholder="ادخل المساحة المطلوبة (مثلا 120 م)">
+                                <i class="fa-solid fas fa-thumbtack"></i>
+                            </div>
+                            <div class="search">
+                                <input type="text" placeholder="ادخل مبزانية المتوقعة  ">
+                                <i class="fa-solid fas fa-thumbtack"></i>
+                            </div>
+                            <div class="search">
+                                <input type="text" placeholder="ادخل اسم المنطقة  ">
+                                <i class="fa-solid fas fa-thumbtack"></i>
+                            </div>
+                            <div class="search">
+                                <input class="btn-danger" type="submit" value="ابحث عن العقار">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="container inner-about">
+            <div class="right-section">
+                <h2> لماذا تختار Skyline للعقارات</h2>
+                <p>نحن نؤمن أن شراء العقار هو قرار العمر، لذلك سخرنا خبرتنا الطويلة في السوق السوري لنقدم لك خدمات
+                    استشارية وعقارية متكاملة تضمن لك الأمان، المصداقية، وأفضل عائد استثماري ممكن</p>
+                <ul>
+                    <li>مصداقية قانونية: نضمن سلامة كافة الأوراق الثبوتية وعمليات الفراغ العقاري</li>
+                    <li>تغطية جغرافية واسعة: خياراتنا تشمل أرقى أحياء دمشق وكافة المحافظات السورية</li>
+                    <li>تقييم عقاري دقيق: نساعدك في معرفة القيمة الحقيقية للعقار بناءً على حركة السوق</li>
+                    <li>تحديث يومي للعروض: عروض حصرية ومتجددة لحظة بلحظة لتناسب ميزانيتك</li>
+                    <li>دارة استثمارات: حلول ذكية لبيع أو تأجير عقارك بأفضل الأرباح الممكنة</li>
+                    <li>دعم فني واستشاري: فريق متخصص يرافقك من أول زيارة ميدانية وحتى استلام المفتاح</li>
+
+                </ul>
+                <button class="btn-danger">استعرض مشاريعنا </button>
+            </div>
+
+            <div class="left-section">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="statistics">
+        <div class="overlay"></div>
+        <div class="container all-statistics">
+
+            <div class="statistic">
+                <div class="overlay-statistic">
+                    <div class="statistic-info">
+                        <h3 class="counter-up" data-target="1200">0</h3>
+                        <p>
+                            عائلة سعيدة
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="statistic">
+                <div class="overlay-statistic">
+                    <div class="statistic-info">
+                        <h3 class="counter-up" data-target="850">0</h3>
+                        <p>
+                            عقارات تم بيعها
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="statistic">
+                <div class="overlay-statistic">
+                    <div class="statistic-info">
+                        <h3 class="counter-up" data-target="450">0</h3>
+                        <p>
+                            وحدات قيد الإنشاء
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="statistic">
+                <div class="overlay-statistic">
+                    <div class="statistic-info">
+                        <h3 class="counter-up" data-target="15">0</h3>
+                        <p>
+                            عام من الخبرة
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="products">
+        <h2 class="section-title">كافة العقارات</h2>
+        <p class="section-desc">اكتشف مجموعتنا الحصرية من العقارات المختارة بعناية لتناسب أرقى الأذواق. من الشقق العصرية
+            في قلب العاصمة إلى الفلل الهادئة في الضواحي، Skyline توفر لك خيارات استثمارية وسكنية لا تُضاهى.
+        </p>
+
+        <div class="container all-products">
+            <a href="single-product.html">
+                <div class="product">
+                    <span class="offer">اطلالة مميزة </span>
+                    <div class="image">
+                        <img src="assets/images//1 (12).jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <span class="category">شقة سكنية </span>
+                        <h3> شقة فاخرة في المالكي </h3>
+                        <span class="location">سوريا -دمشق-شارع الجلاء</span>
+                        <hr>
+
+                        <ul class="props">
+                            <li>
+                                <span>غرفة:</span>
+                                <span><i class="fas fa-bed"></i>5</span>
+                            </li>
+                            <li>
+                                <span>حمام:</span>
+                                <span> <i class="fas fa-bath"></i>4</span>
+                            </li>
+                            <li>
+                                <span>مسبح:</span>
+                                <span><i class="fas fa-swimming-pool"></i>لا يوجد</span>
+                            </li>
+                            <li>
+                                <span>مطبخ:</span>
+                                <span><i class="fas fa-utensils"></i>2</span>
+                            </li>
+                        </ul>
+                        <button class="btn-primary send">
+                            تفاصيل العقار
+                        </button>
+
+                    </div>
+                </div>
+
+            </a>
+            <a href="single-product.html">
+                <div class="product">
+                    <span class="offer">فرصة استثمارية </span>
+                    <div class="image">
+                        <img src="assets/images/2 (3).jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <span class="category">فيلا </span>
+                        <h3> فيلا مودرن مع مسبح</h3>
+                        <span class="location">سوريا -ريف دمشق-يعفور</span>
+                        <hr>
+
+                        <ul class="props">
+                            <li>
+                                <span>غرفة:</span>
+                                <span><i class="fas fa-bed"></i>6</span>
+                            </li>
+                            <li>
+                                <span>حمام:</span>
+                                <span> <i class="fas fa-bath"></i>3</span>
+                            </li>
+                            <li>
+                                <span>مسبح:</span>
+                                <span><i class="fas fa-swimming-pool"></i>2</span>
+                            </li>
+                            <li>
+                                <span>مطبخ:</span>
+                                <span><i class="fas fa-utensils"></i>2</span>
+                            </li>
+                        </ul>
+                        <button class="btn-primary send">
+                            تفاصيل العقار
+                        </button>
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="product">
+                <span class="offer">سعر محروق </span>
+                <div class="image">
+                    <img src="assets/images/1 (20).jpg" alt="">
+                </div>
+                <div class="info">
+                    <span class="category">مكتب </span>
+                    <h3>مكتب تجاري استراتيجي</h3>
+                    <span class="location">سوريا -دمشق-اوتوستراد المزة</span>
+                    <hr>
+
+                    <ul class="props">
+                        <li>
+                            <span>غرفة:</span>
+                            <span><i class="fas fa-bed"></i>2</span>
+                        </li>
+                        <li>
+                            <span>حمام:</span>
+                            <span> <i class="fas fa-bath"></i>1</span>
+                        </li>
+                        <li>
+                            <span>مسبح:</span>
+                            <span><i class="fas fa-swimming-pool"></i>لا يوجد</span>
+                        </li>
+                        <li>
+                            <span>مطبخ:</span>
+                            <span><i class="fas fa-utensils"></i>1</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary send">
+                        تفاصيل العقار
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div class="product">
+                <span class="offer">كسوة جديدة</span>
+                <div class="image">
+                    <img src="assets/images/1 (1).jpg" alt="">
+                </div>
+                <div class="info">
+                    <span class="category">منزل </span>
+                    <h3> بيت عربي مرمم</h3>
+                    <span class="location">سوريا -دمشق القديمة-باب توما</span>
+                    <hr>
+
+                    <ul class="props">
+                        <li>
+                            <span>غرفة:</span>
+                            <span><i class="fas fa-bed"></i>5</span>
+                        </li>
+                        <li>
+                            <span>حمام:</span>
+                            <span> <i class="fas fa-bath"></i>2</span>
+                        </li>
+                        <li>
+                            <span>مسبح:</span>
+                            <span><i class="fas fa-swimming-pool"></i>1 (بحرة)</span>
+                        </li>
+                        <li>
+                            <span>مطبخ:</span>
+                            <span><i class="fas fa-utensils"></i>1</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary send">
+                        تفاصيل العقار
+                    </button>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <section class="text-imonials">
+        <h2 class="section-title">ماذا يقول عملاؤنا؟ </h2>
+        <div class="container all-text-imonial">
+            <div class="box-text-imonial">
+                <div class="image">
+                    <img src="assets/images/student-1.jpg" alt="">
+                </div>
+                <h3> أسامة الحافظ</h3>
+                <p class="position">مستثمر عقاري</p>
+                <div class="stars">
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="decoration-text-imonial">
+                    تجربة استثنائية مع Skyline، المصداقية في التعامل وسرعة الإجراءات القانونية كانت أكثر ما أبهرني. أنصح
+                    بهم بشدة لأي مستثمر يبحث عن الأمان
+                </p>
+            </div>
+
+            <div class="box-text-imonial">
+                <div class="image">
+                    <img src="assets/images//testimonial1.jpg" alt="">
+                </div>
+                <h3> م. لينا القاسم</h3>
+                <p class="position">مهندسة ديكور</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="decoration-text-imonial">
+                    ساعدوني في إيجاد منزل أحلامي بالمواصفات التي كنت أتمناها تماماً. فريق العمل محترف جداً ولديهم ذوق
+                    رفيع في اختيار المواقع.
+                </p>
+            </div>
+
+            <div class="box-text-imonial">
+                <div class="image">
+                    <img src="assets/images/student-2.jpg" alt="">
+                </div>
+                <h3> د. سامر المصري</h3>
+                <p class="position"> طبيب أسنان</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="decoration-text-imonial">
+                    فضل شركة عقارية تعاملت معها في دمشق. الشفافية في عرض الأسعار وتوضيح حالة العقار قبل الشراء وفرت علي
+                    الكثير من الجهد والمال
+                </p>
+            </div>
+
+            <div class="box-text-imonial">
+                <div class="image">
+                    <img src="assets/images//testimonial2.jpg" alt="">
+                </div>
+                <h3> نور الشعلان</h3>
+                <p class="position">سيد أعمال</p>
+                <div class="stars">
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="decoration-text-imonial">
+                    خدمة ما بعد البيع لديهم ممتازة. قاموا بمساعدتي في كل تفاصيل نقل الملكية والخدمات بكل رحابة صدر
+                </p>
+            </div>
+
+            <div class="box-text-imonial">
+                <div class="image">
+                    <img src="assets/images/student-3.jpg" alt="">
+                </div>
+                <h3> أحمد العلي</h3>
+                <p class="position">مغترب سوري</p>
+                <div class="stars">
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="decoration-text-imonial">
+                    كنت متخوفاً من الشراء عن بعد، ولكن Skyline كانوا عيني في دمشق. زودوني بكل التفاصيل والصور
+                    والفيديوهات حتى أتممت الشراء بنجاح.
+                </p>
+            </div>
+
+            <div class="box-text-imonial">
+                <div class="image">
+                    <img src="assets/images/testimonial3.jpg" alt="">
+                </div>
+                <h3> ريم الجابي</h3>
+                <p class="position">محامية</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="decoration-text-imonial">
+                    تنوع الخيارات العقارية لديهم مذهل. يغطون معظم أحياء دمشق الراقية بخيارات تناسب مختلف الميزانيات مع
+                    ضمان قانوني كامل
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gallary">
+        <h2 class="section-title">إنجازات Skyline المعمارية </h2>
+        <p class="section-desc">نفخر في Skyline بتقديم نخبة من المشاريع العقارية التي تجسد رؤيتنا في الجمع بين الفخامة
+            والراحة. من المجمعات السكنية الحديثة إلى الأبراج التجارية المتطورة، نستعرض لكم هنا جزءاً من مسيرتنا في إعمار
+            المستقبل وتقديم حلول سكنية ترتقي لتطلعاتكم
+        </p>
+        <div class="all-images container">
+
+            <div class="image">
+                <a href="assets/images/1 (15).jpg" data-fancybox="gallery">
+                    <img src="assets/images/1 (15).jpg" alt="">
+                </a>
+
+                <div class="overlay">
+                    برج سكاي لاين
+                </div>
+            </div>
+            <div class="image">
+                <a href="assets/images/1 (18).jpg" data-fancybox="gallery">
+                    <img src="assets/images/1 (18).jpg" alt="">
+                </a>
+
+                <div class="overlay">
+                    بناء سكني فاخر
+                </div>
+            </div>
+            <div class="image">
+                <a href="assets/images/1 (7).jpg" data-fancybox="gallery">
+                    <img src="assets/images/1 (7).jpg" alt="">
+                </a>
+
+                <div class="overlay">
+                    بيت بتصميم عصري
+                </div>
+            </div>
+            <div class="image">
+                <a href="assets/images/1 (23).jpg" data-fancybox="gallery">
+                    <img src="assets/images/1 (23).jpg" alt="">
+                </a>
+
+                <div class="overlay">
+                    فيلا فاخرة في منطقة المليحة
+                </div>
+            </div>
+            <div class="image">
+                <a href="assets/images/1 (21).jpg" data-fancybox="gallery">
+                    <img src="assets/images/1 (21).jpg" alt="">
+                </a>
+
+                <div class="overlay">
+                    بيت عصري
+                </div>
+            </div>
+            <div class="image">
+                <a href="assets/images/1 (3).jpg" data-fancybox="gallery">
+                    <img src="assets/images/1 (3).jpg" alt="">
+                </a>
+
+                <div class="overlay">
+                    بيت عربي
+                </div>
+            </div>
+            <div class="image">
+                <a href="assets/images/1 (2).jpg" data-fancybox="gallery">
+                    <img src="assets/images/1 (2).jpg" alt="">
+                </a>
+
+                <div class="overlay">
+                    بيت بغابات مشقيتا
+                </div>
+            </div>
+            <div class="image">
+                <a href="assets/images/1 (10).jpg" data-fancybox="gallery">
+                    <img src="assets/images/1 (10).jpg" alt="">
+                </a>
+
+                <div class="overlay">
+                    فيلا في طرطوس
+                </div>
+            </div>
+
+            <div class="image">
+                <a href="assets/images/1 (9).jpg" data-fancybox="gallery">
+                    <img src="assets/images/1 (9).jpg" alt="">
+                </a>
+
+                <div class="overlay">
+                    بناء سكني
+                </div>
+            </div>
+
+            <!-- <div class="image">
+                <a href="assets/images/bg-hero.jpg" data-fancybox="gallery">
+                    <img src="assets/images/bg-hero.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="image">
+                <a href="assets/images/bg-hero.jpg" data-fancybox="gallery">
+                    <img src="assets/images/bg-hero.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="image">
+                <a href="assets/images/bg-hero.jpg" data-fancybox="gallery">
+                    <img src="assets/images/bg-hero.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="image">
+                <a href="assets/images/bg-hero.jpg" data-fancybox="gallery">
+                    <img src="assets/images/bg-hero.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="image">
+                <a href="assets/images/bg-hero.jpg" data-fancybox="gallery">
+                    <img src="assets/images/bg-hero.jpg" alt="">
+                </a>
+            </div> -->
+
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2 class="section-title"> شركاؤنا في النجاح </h2>
+        <p class="section-desc">نعتز في Skyline بشراكاتنا الاستراتيجية مع كبرى الشركات الهندسية والمؤسسات المالية، التي
+            تساهم معنا في تقديم أعلى معايير الجودة والابتكار في كافة مشاريعنا العقارية
+        </p>
+        <div class="container logos">
+            <div class="image">
+                <img width="150px" src="assets/images/2 (1).png" alt="">
+            </div>
+            <div class="image">
+                <img width="150px" src="assets/images/2 (2).png" alt="">
+            </div>
+            <div class="image">
+                <img width="150px" src="assets/images/2 (3).png" alt="">
+            </div>
+            <div class="image">
+                <img width="150px" src="assets/images/2 (4).png" alt="">
+            </div>
+            <div class="image">
+                <img width="150px" src="assets/images/122.png" alt="">
+            </div>
+            <div class="image">
+                <img width="150px" src="assets/images/1222.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="blog">
+        <h2 class="section-title">احدث الاخبار العقارية </h2>
+        <p class="section-desc">نضع بين أيديكم أحدث التقارير والمستجدات في السوق العقاري السوري، لنرسم معكم ملامح
+            العمران الحديث ونقدم رؤى استثمارية مدروسة تضمن لكم غداً أفضل.
+        </p>
+        <div class="container all-blogs">
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="image">
+                                <p class="blog-category">رؤية 2026</p>
+                                <img src="assets/images/1 (27).jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <h3> أسعار العقارات في سوريا: ارتفاع ملحوظ في الطلب على المناطق المنظمة.</h3>
+                                <p>
+                                    تشهد المناطق السكنية المنظمة في دمشق وريفها إقبالاً متزايداً من المستثمرين، مع
+                                    توقعات باستقرار
+                                    الأسعار وبدء مشاريع عمرانية جديدة تلبي احتياجات السكن العصري.
+                                </p>
+                                <hr>
+                                <div class="blog-footer">
+                                    <button class="btn-danger">اقرا المزيد</button>
+                                    <div class="author">
+                                        <span> قسم تطوير العقاري </span>
+                                        <div class="author-image">
+                                            <img src="assets/images/logo2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="image">
+                                <p class="blog-category">فرص استثمارية</p>
+                                <img src="assets/images/1 (15).jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <h3> Skyline تطلق مشروعها السكني الجديد "برج الأفق" في قلب العاصمة</h3>
+                                <p>
+                                    أعلنت شركة Skyline عن بدء العمل في أحدث مشاريعها السكنية، والذي يتميز بتصاميم
+                                    معمارية فريدة
+                                    وتقنيات "البيت الذكي" لتوفير أعلى مستويات الراحة والأمان </p>
+                                <hr>
+                                <div class="blog-footer">
+                                    <button class="btn-danger">التفاصيل </button>
+                                    <div class="author">
+                                        <span>قسم تطوير العقاري </span>
+                                        <div class="author-image">
+                                            <img src="assets/images/logo2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="image">
+                                <p class="blog-category">فرص استثمارية</p>
+                                <img src="assets/images/1 (24).jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <h3>كيف تختار عقارك القادم؟ دليل Skyline للاستثمار الناجح</h3>
+                                <p>
+                                    نقدم لك أهم النقاط التي يجب مراعاتها عند شراء عقار جديد، بدءاً من الموقع الاستراتيجي
+                                    وصولاً إلى جودة الإكساء والضمانات العقارية لضمان أفضل عائد استثماري.</p>
+                                <hr>
+                                <div class="blog-footer">
+                                    <button class="btn-danger">تصفح الدليل </button>
+                                    <div class="author">
+                                        <span>قسم تطوير العقاري </span>
+                                        <div class="author-image">
+                                            <img src="assets/images/logo2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="contact container">
+            <div class="inner-contact">
+                <div>
+                    <h5>
+                        البريد الالكتروني
+                    </h5>
+                    <a href="mailto:wwwwahmadrajab77@gmail.com">wwwwahmadrajab77@gmail.com</a>
+                </div>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+
+            </div>
+            <div class="inner-contact">
+                <div>
+                    <h5>
+                        رقم الهاتف
+                    </h5>
+                    <a href="tel:+963939557748">963939557748+</a>
+                </div>
+                <a href=""><i class="fa-solid fa-phone"></i></a>
+
+            </div>
+            <div class="inner-contact">
+                <div>
+                    <h5>
+                        تواصل معنا عبر واتساب
+                    </h5>
+                    <a href="https://wa.me/963939557748" target="_blank">963939557748+</a>
+                </div>
+                <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+
+            </div>
+        </div>
+
+
+
+        <div class="container inner-footer">
+            <div class="box-footer">
+                <img class="logo" src="assets/images/logo2.png" alt="">
+                <h3>الشركة كذا العقارية</h3>
+                <p>
+                    "Skyline للاستثمار والتطوير العقاري.. نحن لا نبني جدراناً، بل نصنع مجتمعات سكنية تنبض بالحياة وتجمع
+                    بين عبق التاريخ السوري ورفاهية المستقبل
+                </p>
+            </div>
+            <div class="box-footer">
+                <h3>اهم االروابط </h3>
+                <ul>
+                    <li>
+                        <a href="">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="">اتصل بنا</a>
+                    </li>
+                    <li>
+                        <a href="">حول الشركة</a>
+                    </li>
+                    <li>
+                        <a href="">كافة العقارات</a>
+                    </li>
+                    <li>
+                        <a href="">المدونة </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-footer">
+                <h3>اهم العقارات </h3>
+                <ul>
+                    <li>
+                        <a href="">شقق سكنية</a>
+                    </li>
+                    <li>
+                        <a href="">فلل سكنية </a>
+                    </li>
+                    <li>
+                        <a href="">مكاتب تجارية</a>
+                    </li>
+                    <li>
+                        <a href=""> مكاتب تجارية</a>
+                    </li>
+                    <li>
+                        <a href="">مجمعات سياحية </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-footer">
+                <h3>النشرة البريدية </h3>
+                <form action="">
+                    <input type="text" placeholder="ادخل البريد الالكتروني">
+                    <button class="btn-danger">ارسال البيانات</button>
+                </form>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-footer">
+    <div class="container">
+        <p>جميع الحقوق محفوظة &copy; 2026</p>
+        <p>تصميم وتطوير: <span>أحمد سامر رجب</span> | <a href="tel:+963939557748">0939557748</a></p>
+    </div>
+</div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+
+
+        window.onload = () => {
+            const observerOptions = {
+                threshold: 0.5 // بيبدأ العد لما يظهر 50% من العنصر على الشاشة
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = +counter.getAttribute('data-target');
+                        const increment = target / 100;
+
+                        const updateCount = () => {
+                            const count = +counter.innerText;
+                            if (count < target) {
+                                counter.innerText = Math.ceil(count + increment);
+                                setTimeout(updateCount, 20);
+                            } else {
+                                counter.innerText = target + "+";
+                            }
+                        };
+
+                        updateCount();
+                        observer.unobserve(counter); // بيوقف مراقبة العنصر بعد ما يخلص عد عشان ما يعيد كل شوي
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.counter-up').forEach(counter => {
+                observer.observe(counter);
+            });
+        };
+
+
+
+
+
+
+    </script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                }
+            }
+        });
+
+    </script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

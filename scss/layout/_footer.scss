@@ -1,0 +1,206 @@
+footer {
+    .contact {
+        padding: 15px 0;
+        margin-bottom: 30px;
+        border-radius: 0 0 40px 40px;
+        border-top: 3px solid #353535;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+
+        .inner-contact {
+
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                color: #414040;
+                text-decoration: none;
+                word-break: break-all;
+
+                i {
+                    color: $secandaryColor;
+                    font-size: 40px;
+                }
+
+            }
+        }
+
+        div:nth-child(2) {
+            border-right: 2px solid #b4b4b4;
+            border-left: 2px solid #b4b4b4;
+        }
+    }
+
+    background-color: rgb(46, 46, 46);
+
+    .inner-footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        justify-items: center;
+
+
+        .box-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+           
+
+            .logo {
+                width: 150px;
+                margin: 0 auto 20px; // زيادة المسافة السفلية ليفصل اللوجو عن النص
+            }
+
+            h3 {
+                color: $maincColor;
+                margin-bottom: 25px; // مسافة أكبر تحت العنوان
+                font-size: 20px; // تأكد من حجم خط مناسب للعناوين
+            }
+
+            p {
+                color: white;
+                font-size: 14px;
+                width: 90%; // تقليل العرض قليلاً لإعطاء مساحة للتنفس
+                margin: 0 auto 25px;
+                line-height: 1.6; // إضافة تباعد سطري مريح للنص الطويل
+            }
+
+            // تنسيق القوائم (الروابط)
+            ul {
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 30px; // مسافة بين القائمة والنشرة البريدية
+                gap: 15px; // تعديل مهم: إضافة تباعد سطري بين العناصر لمنع التداخل
+
+                li {
+                    margin: 0 auto;
+                    // تعديل مهم: تغيير عرض الخط المنقط ليصبح أصغر ومنتصف
+                    width: fit-content; // يجعل العرض مساوياً لعرض النص تماماً
+                    // أو استخدم width: 50%; إذا أردت خطاً أطول قليلاً من النص
+                    border-bottom: 1px dotted #ebebeb57; // جعل الخط أرفع (1px) وأقل كثافة
+                    padding-bottom: 5px; // مسافة بسيطة جداً فوق الخط
+                    transition: border-color 0.3s ease; // إضافة تأثير بسيط عند التمرير
+
+                    &:hover {
+                        border-color: $secandaryColor; // يتغير لون الخط عند التمرير
+                    }
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 16px;
+                    display: inline-block; // لضمان التباعد السطري المريح
+                    padding: 5px 15px; // إضافة مساحة حول النص لسهولة النقر
+
+                    &:hover {
+                        color: $secandaryColor; // إضافة تأثير عند تمرير الماوس
+                    }
+                }
+            }
+
+            // تنسيق النشرة البريدية (Input & Button)
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                input {
+                    width: 100%; // استخدام العرض الكامل للحاوية البيضاء
+                    max-width: 400px; // تحديد أقصى عرض
+                    text-align: center;
+                    margin-bottom: 15px;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    background-color: white;
+                    color: #333; // لون النص المدخل أسود أو رمادي غامق
+
+                    &::placeholder {
+                        color: #888; // لون النص التوضيحي أخف
+                    }
+                }
+
+                button {
+                    width: 100%; // استخدام العرض الكامل للحاوية البرتقالية
+                    max-width: 400px;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: $maincColor; // أو اللون البرتقالي المناسب
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: darken($maincColor, 10%); // يصبح أغمق عند التمرير
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-footer {
+    background-color: darken(#2e2e2e, 5%); // لون أغمق قليلاً من الفوتر للتمييز
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); // الخط الفاصل العلوي
+    text-align: center;
+    margin-top: 40px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    p {
+        color: #b0b0b0; // لون رمادي فاتح للنصوص الثانوية
+        font-size: 14px;
+        margin: 0;
+        direction: rtl;
+
+        span {
+            color: $maincColor; // تمييز اسمك بلون البراند الأساسي
+            font-weight: bold;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            unicode-bidi: plaintext; // لضمان ظهور رقم الهاتف بشكل صحيح مع النصوص العربية
+            
+            &:hover {
+                color: $maincColor;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// تعديل بسيط للجوال ليظهر بشكل مرتب
+@media (min-width: 768px) {
+    .bottom-footer .container {
+        flex-direction: row-reverse; // جعل العناصر بجانب بعضها في الشاشات الكبيرة
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+}
+
+
+
+
+
+}
