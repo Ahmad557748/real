@@ -42,6 +42,7 @@
 body {
   background-color: #eee;
   font-family: cairo;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -565,7 +566,7 @@ aside .mobile-menu .cta {
   align-items: center;
   flex-direction: column;
   background-color: #1E5A91;
-  background-image: url("../../assets/images/bb1 (1).jpg");
+  background-image: url("../../assets/images/high.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
