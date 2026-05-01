@@ -17,7 +17,7 @@
 
 .hero>* {
     @include flexbox(center, center, column);
-    @include bg-img(url('../../assets/images/bb1\ \(1\).jpg'));
+    @include bg-img(url('../../assets/images/high.webp'));
     position: relative;
     height: auto;
 
@@ -44,7 +44,7 @@
         h1 {
             font-size: 30px;
             text-align: center;
-
+            z-index: 1;
             @include media-up(md) {
                 font-size: 35px;
             }
@@ -342,7 +342,7 @@
 }
 
 .gallary {
-    padding: 50px 0;
+    padding: 50px 10px;
     background-color: white;
 
     .all-images {

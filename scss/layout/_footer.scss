@@ -51,7 +51,7 @@ footer {
             flex-direction: column;
             align-items: center;
             text-align: center;
-           
+
 
             .logo {
                 width: 150px;
@@ -149,55 +149,80 @@ footer {
                         background-color: darken($maincColor, 10%); // يصبح أغمق عند التمرير
                     }
                 }
+
+               
+
+
+
             }
+             .icons {
+                    margin-top: 20px;
+                    @include flexbox(start, center, row);
+                    gap: 10px;
+
+                    i {
+                        font-size: 25px;
+                        cursor: pointer;
+                        color: $maincColor;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: $secandaryColor;
+                            scale: 1.2;
+                        }
+                    }
+
+                }
+
+            
         }
     }
 
     .bottom-footer {
-    background-color: darken(#2e2e2e, 5%); // لون أغمق قليلاً من الفوتر للتمييز
-    padding: 20px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); // الخط الفاصل العلوي
-    text-align: center;
-    margin-top: 40px;
+        background-color: darken(#2e2e2e, 5%); // لون أغمق قليلاً من الفوتر للتمييز
+        padding: 20px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1); // الخط الفاصل العلوي
+        text-align: center;
+        margin-top: 40px;
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    p {
-        color: #b0b0b0; // لون رمادي فاتح للنصوص الثانوية
-        font-size: 14px;
-        margin: 0;
-        direction: rtl;
-
-        span {
-            color: $maincColor; // تمييز اسمك بلون البراند الأساسي
-            font-weight: bold;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        a {
-            color: #fff;
-            text-decoration: none;
-            unicode-bidi: plaintext; // لضمان ظهور رقم الهاتف بشكل صحيح مع النصوص العربية
-            
-            &:hover {
-                color: $maincColor;
-                text-decoration: underline;
+        p {
+            color: #b0b0b0; // لون رمادي فاتح للنصوص الثانوية
+            font-size: 14px;
+            margin: 0;
+            direction: rtl;
+
+            span {
+                color: $maincColor; // تمييز اسمك بلون البراند الأساسي
+                font-weight: bold;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                unicode-bidi: plaintext; // لضمان ظهور رقم الهاتف بشكل صحيح مع النصوص العربية
+
+                &:hover {
+                    color: $maincColor;
+                    text-decoration: underline;
+                }
             }
         }
     }
-}
 
-// تعديل بسيط للجوال ليظهر بشكل مرتب
-@media (min-width: 768px) {
-    .bottom-footer .container {
-        flex-direction: row-reverse; // جعل العناصر بجانب بعضها في الشاشات الكبيرة
-        justify-content: space-between;
-        padding: 0 50px;
+    // تعديل بسيط للجوال ليظهر بشكل مرتب
+    @media (min-width: 768px) {
+        .bottom-footer .container {
+            flex-direction: row-reverse; // جعل العناصر بجانب بعضها في الشاشات الكبيرة
+            justify-content: space-between;
+            padding: 0 50px;
+        }
     }
-}
 
 
 

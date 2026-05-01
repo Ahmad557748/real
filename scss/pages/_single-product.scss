@@ -1,7 +1,7 @@
 .page-header {
     padding: 60px;
-   
-      @include flexbox(center, center, column);
+
+    @include flexbox(center, center, column);
     @include bg-img(url('../../assets/images/bb1\ \(2\).jpg'));
     position: relative;
     height: auto;
@@ -29,7 +29,7 @@
         font-size: 16px;
 
         a {
-           color: $maincColor;
+            color: $maincColor;
             text-decoration: none;
             transition: 0.3s;
             display: flex;
@@ -48,7 +48,7 @@
         }
 
         span {
-           color: $maincColor;
+            color: $maincColor;
         }
     }
 }
@@ -146,7 +146,7 @@
                 padding: 20px;
                 border-radius: 10px;
                 display: flex;
-                gap: 15px;
+                gap: 5px;
 
                 .box {
                     background-color: white;
@@ -162,8 +162,8 @@
                         font-size: 30px;
                         color: white;
                         background-color: $maincColor;
-                        height: 60px;
-                        width: 60px;
+                        height: 50px;
+                        width: 50px;
                         border-radius: 50%;
                         @include flexbox(center, center, column);
                     }
@@ -184,7 +184,7 @@
 
                 .swiper-slide {
                     width: 100%;
-                    height: 500px;
+                    height: auto;
                     border-radius: 10px;
                     overflow: hidden;
                     display: flex;
@@ -326,37 +326,38 @@
                     display: inline-block;
                 }
             }
+
             .price-card {
-    background-color: #fff;
-    border-top: 4px solid $maincColor; // خط بلون البراند فوق السعر
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px; // مسافة بينه وبين البحث
+                background-color: #fff;
+                border-top: 4px solid $maincColor; // خط بلون البراند فوق السعر
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 20px; // مسافة بينه وبين البحث
 
-    .widget-title {
-        font-size: 1.1rem;
-        color: #666;
-    }
+                .widget-title {
+                    font-size: 1.1rem;
+                    color: #666;
+                }
 
-    .price-value {
-        color: $maincColor;
-        font-size: 1.8rem;
-        font-weight: 800;
-        margin: 10px 0;
-        
-        .currency {
-            font-size: 0.9rem;
-            color: #333;
-        }
-    }
+                .price-value {
+                    color: $maincColor;
+                    font-size: 1.8rem;
+                    font-weight: 800;
+                    margin: 10px 0;
 
-    .status {
-        font-size: 0.85rem;
-        color: #27ae60; // لون أخضر للدلالة على التوفر
-        font-weight: bold;
-    }
-}
+                    .currency {
+                        font-size: 0.9rem;
+                        color: #333;
+                    }
+                }
+
+                .status {
+                    font-size: 0.85rem;
+                    color: #27ae60; // لون أخضر للدلالة على التوفر
+                    font-weight: bold;
+                }
+            }
 
             // 1. البحث
             .search-form {
@@ -366,7 +367,7 @@
                     flex: 1;
                     padding: 10px;
                     border: 1px solid #ddd;
-                    border-radius: 5px 0 0 5px;
+                    border-radius:  0 5px 5px 0;
                 }
 
                 button {
@@ -374,7 +375,7 @@
                     color: white;
                     border: none;
                     padding: 10px 15px;
-                    border-radius: 0 5px 5px 0;
+                    border-radius: 5px 0 0 5px;
                     cursor: pointer;
                 }
             }

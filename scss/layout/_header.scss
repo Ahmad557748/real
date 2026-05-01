@@ -4,7 +4,7 @@ header {
     @include flexbox;
     position: -webkit-sticky; // لدعم متصفحات Safari
     position: sticky;
-    top: 1px; // المسافة من أعلى الشاشة عند الالتصاق
+    top: 0px; // المسافة من أعلى الشاشة عند الالتصاق
     height: fit-content; // لضمان أن الشريط يأخذ حجم محتواه فقط ولا يتمدد بشكل خاطئ
     z-index: 100000;
     border-bottom: 1PX solid #ccc;
