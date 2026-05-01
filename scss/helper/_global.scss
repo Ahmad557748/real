@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&display=swap');
 
 
@@ -6,32 +5,38 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
-body {
+body , html {
     background-color: #eee;
     font-family: cairo;
- overflow: hidden !important;
+    overflow-x: hidden !important;
+    max-width: 100%;
+    position: relative;
 }
 
 a {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
-.section-title{
+
+.section-title {
     font-size: 30px;
-    color:$maincColor ;
+    color: $maincColor ;
     text-align: center;
     width: fit-content;
     margin: auto;
     position: relative;
-    &::before{
+
+    &::before {
         position: absolute;
         content: "";
         width: 70px;
@@ -40,7 +45,8 @@ img{
         right: -80px;
         top: 50%;
     }
-    &::after{
+
+    &::after {
         position: absolute;
         content: "";
         width: 75px;
@@ -49,9 +55,10 @@ img{
         left: -80px;
         top: 50%;
     }
-  
+
 }
-.section-desc{
+
+.section-desc {
     text-align: center;
     font-size: 18px;
     width: 70%;
