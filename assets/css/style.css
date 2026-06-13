@@ -864,7 +864,7 @@ aside .mobile-menu .cta {
 }
 .gallary .all-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 .gallary .all-images .image {
@@ -930,7 +930,7 @@ aside .mobile-menu .cta {
 }
 .partners .logos .image img:hover {
   filter: grayscale(0);
-  scale: 1.2;
+  scale: 1.05;
 }
 
 .blog {
@@ -1023,9 +1023,9 @@ aside .mobile-menu .cta {
   /* جعل الشكل دائرياً */
   border-radius: 50%;
   /* تحديد حجم الدائرة */
-  width: 50px;
+  width: 30px;
   /* عرض الدائرة */
-  height: 50px;
+  height: 30px;
   /* طول الدائرة */
   /* تمركز السهم داخل الدائرة */
   display: flex;
@@ -1047,7 +1047,7 @@ aside .mobile-menu .cta {
   /* تصغير حجم السهم قليلاً ليتناسب مع حجم الدائرة الجديد */
 }
 .blog .all-blogs .swiper .swiper-button-prev::after {
-  font-size: 20px;
+  font-size: 10px;
   /* حجم السهم الداخلي */
 }
 .blog .all-blogs .swiper {
@@ -1067,9 +1067,9 @@ aside .mobile-menu .cta {
   /* جعل الشكل دائرياً */
   border-radius: 50%;
   /* تحديد حجم الدائرة */
-  width: 50px;
+  width: 30px;
   /* عرض الدائرة */
-  height: 50px;
+  height: 30px;
   /* طول الدائرة */
   /* تمركز السهم داخل الدائرة */
   display: flex;
@@ -1091,7 +1091,7 @@ aside .mobile-menu .cta {
   /* تصغير حجم السهم قليلاً ليتناسب مع حجم الدائرة الجديد */
 }
 .blog .all-blogs .swiper .swiper-button-next::after {
-  font-size: 20px;
+  font-size: 10px;
   /* حجم السهم الداخلي */
 }
 .blog .all-blogs .swiper {

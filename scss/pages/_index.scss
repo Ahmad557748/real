@@ -348,7 +348,7 @@
 
     .all-images {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 30px;
 
         .image {
@@ -429,7 +429,7 @@
 
                 &:hover {
                     filter: grayscale(0);
-                    scale: 1.2;
+                    scale: 1.05;
                 }
             }
         }
@@ -558,9 +558,9 @@
                 border-radius: 50%;
 
                 /* تحديد حجم الدائرة */
-                width: 50px;
+                width: 30px;
                 /* عرض الدائرة */
-                height: 50px;
+                height: 30px;
                 /* طول الدائرة */
 
                 /* تمركز السهم داخل الدائرة */
@@ -585,7 +585,7 @@
 
             /* تصغير حجم السهم قليلاً ليتناسب مع حجم الدائرة الجديد */
             .swiper-button-prev::after {
-                font-size: 20px;
+                font-size: 10px;
                 /* حجم السهم الداخلي */
             }
 
@@ -609,9 +609,9 @@
                 border-radius: 50%;
 
                 /* تحديد حجم الدائرة */
-                width: 50px;
+                width: 30px;
                 /* عرض الدائرة */
-                height: 50px;
+                height: 30px;
                 /* طول الدائرة */
 
                 /* تمركز السهم داخل الدائرة */
@@ -636,7 +636,7 @@
 
             /* تصغير حجم السهم قليلاً ليتناسب مع حجم الدائرة الجديد */
             .swiper-button-next::after {
-                font-size: 20px;
+                font-size: 10px;
                 /* حجم السهم الداخلي */
             }
 
